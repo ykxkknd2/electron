@@ -1,0 +1,16 @@
+directories:
+  output: dist
+  buildResources: build
+extraMetadata:
+  main: main.js
+files:
+  - filter:
+      - package.json
+  - from: 'E:\test\electron-webpack-quick-start-master\dist/main'
+  - from: 'E:\test\electron-webpack-quick-start-master\dist/renderer'
+  - from: 'E:\test\electron-webpack-quick-start-master\dist/renderer-dll'
+extraResources:
+  - from: static
+    to: static
+extends: 'file:E:\test\electron-webpack-quick-start-master\node_modules\electron-webpack\out\electron-builder.js'
+electronVersion: 4.0.1
